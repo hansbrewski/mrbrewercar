@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<!--Check out my sick internal documentation. For example this chunk below uses an animate property-->
+<div class="w3-container w3-center w3-animate-opacity">
+  <h1>This is Mr Brewer's Car!</h1>
+
+<!--I google 'embarrasing cars' and this is what I got-->
+<img src="download.jpg" alt="Car" style="width:50%">
+</div>
+<!--This w3schools stuff uses a lot of div tags, and the class attribute is used to add properties to the div-->
+<div class="w3-container w3-center w3-animate-opacity">
+  <p>A car is a wheeled, self-powered motor vehicle used for transportation.</p>
+</div>
+<!--This form doesn't work, it just looks good. I don't know backend languages. Plus i don't know how to get free hosting for a web page that runs a back end-->
+ <div class="w3-card-4">
+    <div class="w3-container w3-green">
+      <h2>Want to leave a comment about my car? You can!</h2>
+    </div>
+
+    <form class="w3-container">
+      <p>
+      <input class="w3-input" type="text">
+      <label>First Name</label></p>
+      <p>     
+      <input class="w3-input" type="text">
+      <label>Last Name</label></p>
+    </form>
+	 <button class="w3-btn w3-blue">Send!</button></p>
+	 <!--This next chunk shows off a slideshow bit of code-->
+	 <h2 class="w3-center">Manual Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="img1.jpg" style="width:30%">
+  <img class="mySlides" src="img2.jpg" style="width:30%">
+  <img class="mySlides" src="img3.jpg" style="width:30%">
+  <img class="mySlides" src="img4.jpg" style="width:30%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#128540;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#128540;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div class="w3-container w3-teal">
+  <p>Hey its the 21st century why can't a guy drive a tiny two seat hello kitty car its fine allright just leave me alone</p>
+</div>
+
+</body>
+</html> 
